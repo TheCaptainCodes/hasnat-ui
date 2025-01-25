@@ -1,0 +1,120 @@
+{
+  "name": "hasnat-ui",
+  "displayName": "Hasnat UI",
+  "description": "Hasnat UI empowers developers to fully customize their VS Code interface using custom CSS and JavaScript. Created by Md. Fatin Hasnat, this extension redefines productivity and personalization.",
+  "version": "1.0.0",
+  "publisher": "Md. Fatin Hasnat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fatinhasnat/hasnat-ui"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "keywords": [
+    "Hasnat UI",
+    "hasnat ui",
+    "custom ui",
+    "Custom UI",
+    "vs code themes",
+    "VS Code Themes",
+    "ui customization",
+    "UI Customization",
+    "css",
+    "CSS",
+    "javascript",
+    "JavaScript",
+    "personalized editor",
+    "Personalized Editor",
+    "custom extensions",
+    "Custom Extensions",
+    "md fatin hasnat",
+    "Md Fatin Hasnat",
+    "hasnat",
+    "Hasnat",
+    "fatin",
+    "Fatin",
+    "theme",
+    "Theme",
+    "ui",
+    "UI",
+    "developer tools",
+    "Developer Tools",
+    "coding productivity",
+    "Coding Productivity",
+    "vs code enhancements",
+    "VS Code Enhancements",
+    "frontend customization",
+    "Frontend Customization",
+    "customization tools",
+    "Customization Tools",
+    "editor themes",
+    "Editor Themes",
+    "ui design",
+    "UI Design",
+    "md fatin hasnat ui",
+    "vs code extensions",
+    "VS Code Extensions"
+  ],
+  "categories": [
+    "Themes",
+    "Other",
+    "Productivity",
+    "Customization",
+    "Utilities",
+    "Programming Languages",
+    "Extension Packs",
+    "Snippets",
+    "Linters",
+    "Testing",
+    "Debuggers",
+    "Color Themes",
+    "Keymaps",
+    "Formatters",
+    "Language Packs"
+  ],
+  "homepage": "https://hasnatui.vercel.app/",
+  "bugs": {
+    "url": "https://github.com/thecaptaincodes/hasnat-ui/issues"
+  },
+  "author": {
+    "name": "Md. Fatin Hasnat",
+    "email": "hello@fatinhasnat.com",
+    "url": "https://fatinhasnat.com/"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hasnat-ui.applyCustomUI",
+        "title": "Apply Hasnat UI"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "clean": "rimraf out",
+    "build": "npm run clean && npm run compile",
+    "lint": "eslint src --ext .ts"
+  },
+  "extensionDependencies": [
+    "be5invis.vscode-custom-css",
+    "PKief.material-icon-theme"
+  ],
+  "activationEvents": [
+    "onCommand:hasnat-ui.applyCustomUI",
+    "onStartupFinished"
+  ],
+  "dependencies": {
+    "@types/jest": "^29.5.14"
+  },
+  "devDependencies": {
+    "vscode": "^1.60.0",
+    "@types/node": "^20.17.16",
+    "@types/vscode": "^1.60.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3"
+  },
+  "license": "MIT"
+}

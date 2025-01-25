@@ -39,33 +39,34 @@ const vscode = __importStar(require("vscode"));
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 function activate(context) {
-    const isFirstRun = context.globalState.get('hasAppliedHasnatUI', false);
-    // If it's the first run, show the prompts
-    if (!isFirstRun) {
-        // Set the flag to true so that it won't run again after this session
-        context.globalState.update('hasAppliedHasnatUI', true);
-        vscode.window.showInputBox({
-            prompt: "Hello! I'm Md. Fatin Hasnat, the owner and developer of Hasnat UI. Check out my website: https://fatinhasnat.com/ or reach out to me at hello@fatinhasnat.com for more information!"
-        }).then(value => {
-            console.log(`User's email: ${value}`);
+    vscode.window.showWarningMessage("To apply Hasnat UI, please follow these steps:\n\n" +
+        "1. Click 'Yes' if you would like to enable Hasnat UI.\n" +
+        "2. After the automatic reload, press 'Ctrl+P' and type '>Reload Custom CSS and JS'. Select the option to reload.\n" +
+        "3. Finally, restart VS Code to complete the installation and see the changes.");
+    // Add a delay of 2 seconds before showing the next step
+    setTimeout(() => {
+        vscode.window
+            .showInformationMessage("Do you want to enable Hasnat UI?", "Yes", "No")
+            .then((response) => {
+            if (response === "Yes") {
+                setupCustomUI(context);
+            }
         });
-        setTimeout(() => {
-            vscode.window.showWarningMessage("To apply Hasnat UI, please follow these steps:\n\n" +
-                "1. Click 'Yes' if you would like to enable Hasnat UI.\n" +
-                "2. After the automatic reload, press 'Ctrl+P' and type '>Reload Custom CSS and JS'. Select the option to reload.\n" +
-                "3. Finally, restart VS Code to complete the installation and see the changes.");
-            // Add a delay of 2 seconds before showing the next step
-            setTimeout(() => {
-                vscode.window
-                    .showInformationMessage("Do you want to enable Hasnat UI?", "Yes", "No")
-                    .then((response) => {
-                    if (response === "Yes") {
-                        setupCustomUI(context);
-                    }
-                });
-            }, 2000);
-        }, 3000);
+    }, 2000);
+}
+function isFirstRunCheck(context) {
+    const configFilePath = path.join(context.extensionPath, 'hasnat-ui-config.json');
+    try {
+        if (!fs.existsSync(configFilePath)) {
+            // If the file doesn't exist, it's the first run
+            fs.writeFileSync(configFilePath, JSON.stringify({ setupComplete: true }));
+            return true;
+        }
     }
+    catch (error) {
+        console.error("Error checking for first run:", error);
+    }
+    return false;
 }
 async function setupCustomUI(context) {
     try {

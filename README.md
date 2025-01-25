@@ -1,68 +1,81 @@
-# Hasnat UI - Customize Your VS Code Experience
+# Hasnat UI - Redefine Your VS Code Experience  
 
-Hasnat UI is a powerful Visual Studio Code extension that enables you to personalize your editor with custom CSS and JavaScript. Designed and developed by [Md. Fatin Hasnat](https://fatinhasnat.com/), Hasnat UI aims to redefine your coding experience with complete UI customization.
+Hasnat UI is a transformative Visual Studio Code extension that elevates your editor with cutting-edge design and functionality. Crafted by [Md. Fatin Hasnat](https://fatinhasnat.com/), it aims to redefine your coding experience with complete UI customization..  
 
-Website: [https://hasnatui.vercel.app/](https://hasnatui.vercel.app/)
+Website: [https://hasnatui.vercel.app/](https://hasnatui.vercel.app/)  
 
----
+---  
 
-## Features
-- Apply custom CSS and JavaScript to your VS Code environment.
-- Enhance productivity with a personalized UI.
-- Seamless integration with popular themes and extensions.
+## Key Features  
 
----
+### **1. Modernized Editor Interface**  
+Hasnat UI gives your editor a fresh look with refined fonts, elegant spacing, and smooth animations.  
 
-## Usage
+![Modernized Editor After](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/modernized-editor-interface_after.png?raw=true)  
 
-### Step 1: Enable Hasnat UI
-When you first install Hasnat UI, you will see this prompt:
+---  
 
-![Enable Hasnat UI Prompt](https://via.placeholder.com/800x200?text=Enable+Hasnat+UI+Prompt)
+### **2. Streamlined Quick File Navigation & Modern Tooltips**  
+Improved file navigation with a focus on speed and precision boosts productivity.  
 
-- Click **Yes** to proceed.
+![Quick File Navigation Before](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/feature-4.png?raw=true)  
+![Tooltip](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/feature-4%20(2).png?raw=true)   
 
-### Step 2: Reload Custom CSS and JS
-After the automatic reload, press `Ctrl+P` (or `Cmd+P` on macOS), type:
+---  
 
-```plaintext
->Reload Custom CSS and JS
-```
+### **3. Enhanced File Explorer**  
+A visually pleasing and minimalist file explorer makes managing project files effortless.  
 
-Then select the option to reload.
+![File Explorer After](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/enhanced-file-explorer_after.png?raw=true)  
 
-![Reload Custom CSS and JS](https://via.placeholder.com/800x400?text=Reload+Custom+CSS+and+JS)
+---  
 
-### Step 3: Restart VS Code
-Finally, restart your VS Code editor to apply the changes.
+### **4. Browser-Inspired Tabs**  
+Navigate files with tabs designed to resemble modern browsers, enhancing usability and style.  
 
-![Restart VS Code](https://via.placeholder.com/800x400?text=Restart+VS+Code)
+![Browser Tabs After](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/browser-inspired-tabs_after.png?raw=true)  
 
----
+---  
 
-## Screenshots
-### Before Hasnat UI
-![Default VS Code](https://via.placeholder.com/800x400?text=Default+VS+Code)
+## How to Apply Hasnat UI  
 
-### After Hasnat UI
-![Hasnat UI Applied](https://via.placeholder.com/800x400?text=Hasnat+UI+Applied)
+### **Step 1: Activate Hasnat UI**  
+After installing the extension, you'll be prompted to enable Hasnat UI. Click **Yes** to proceed.  
 
----
+![Enable Hasnat UI](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/Step-1.png?raw=true)  
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/fatinhasnat/hasnat-ui).
+---  
 
----
+### **Step 2: Reload Custom CSS and JS**  
+Open the Command Palette (`Ctrl+P` or `Cmd+P` on macOS) and type:  
+```plaintext  
+>Reload Custom CSS and JS  
+```  
+Then select the option to reload.  
 
-## License
-Hasnat UI is licensed under the [MIT License](LICENSE).
+![Reload Custom CSS and JS](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/Step-2.png?raw=true)  
 
----
+---  
 
-## About the Developer
-**Md. Fatin Hasnat** is a passionate software developer dedicated to enhancing developer tools and creating innovative solutions. Learn more at [fatinhasnat.com](https://fatinhasnat.com/) or contact via email at [hello@fatinhasnat.com](mailto:hello@fatinhasnat.com).
+### **Step 3: Restart VS Code**  
+Finally, restart your Visual Studio Code editor to fully apply the changes.  
 
----
+![Restart VS Code](https://github.com/TheCaptainCodes/hasnat-ui/blob/main/images/Step-3.png?raw=true)  
 
-## Support
-If you enjoy using Hasnat UI, please leave a review and star the repository on GitHub! Your support means a lot.
+---  
+
+## About the Developer  
+
+**Md. Fatin Hasnat** is a passionate software developer dedicated to enhancing developer tools and crafting innovative solutions. Learn more at [fatinhasnat.com](https://fatinhasnat.com/) or contact via email at [hello@fatinhasnat.com](mailto:hello@fatinhasnat.com).  
+
+---  
+
+## License  
+
+Hasnat UI is licensed under the [MIT License](LICENSE).  
+
+---  
+
+## Support  
+
+If you enjoy using Hasnat UI, please leave a review and star the repository on GitHub! Your support means a lot.  

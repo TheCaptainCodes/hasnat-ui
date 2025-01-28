@@ -3,10 +3,11 @@
   "displayName": "Hasnat UI",
   "description": "Hasnat UI empowers developers to fully customize their VS Code interface using custom CSS and JavaScript. Created by Md. Fatin Hasnat, this extension redefines productivity and personalization.",
   "version": "1.0.0",
-  "publisher": "Md. Fatin Hasnat",
+  "publisher": "fatinhasnat",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fatinhasnat/hasnat-ui"
+    "url": "https://github.com/TheCaptainCodes/hasnat-ui"
   },
   "engines": {
     "vscode": "^1.60.0"
@@ -30,6 +31,8 @@
     "Custom Extensions",
     "md fatin hasnat",
     "Md Fatin Hasnat",
+    "Fatin Hasnat",
+    "fatin hasnat",
     "hasnat",
     "Hasnat",
     "fatin",
@@ -75,7 +78,7 @@
   ],
   "homepage": "https://hasnatui.vercel.app/",
   "bugs": {
-    "url": "https://github.com/thecaptaincodes/hasnat-ui/issues"
+    "url": "https://github.com/TheCaptainCodes/hasnat-ui/issues"
   },
   "author": {
     "name": "Md. Fatin Hasnat",

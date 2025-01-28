@@ -1,9 +1,3 @@
-/* Code comment style */
-/* .mtk5 {
-    font-family: 'Monaspace Radon', monospace !important;
-    color: #008c7d !important;
-} */
-
 .line-numbers {
     position: relative !important;
     width: 35px !important;
@@ -150,6 +144,7 @@
     color: #fff;
 }
 
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .tab {
@@ -161,7 +156,6 @@
         gap: 5px;
     }
 }
-
 
 
 /* File Explorer Selected Item */
